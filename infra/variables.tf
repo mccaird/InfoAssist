@@ -209,12 +209,12 @@ variable "openAiSkuName" {
 
 variable "chatGptDeploymentName" {
   type    = string
-  default = "gpt-35-turbo-16k"
+  default = "gpt-35-turbo"
 }
 
 variable "chatGptModelName" {
   type    = string
-  default = "gpt-35-turbo-16k"
+  default = "gpt-35-turbo"
 }
 
 variable "chatGptModelSkuName" {
@@ -413,7 +413,7 @@ variable "enrichmentAppServicePlanName" {
 variable "enrichmentAppServiceSkuSize" {
   description = "The size of the app service plan for the enrichment service. Must match with the tier value in enrichmentAppServiceSkuTier."
   type = string
-  default = "P2v3"
+  default = "P0v3"
 }
 
 variable "enrichmentAppServiceSkuTier" {
@@ -450,7 +450,7 @@ variable "functionsAppName" {
 variable "functionsAppSkuSize" {
   description = "The size of the app service plan for the functions app. Must match with the tier value in functionsAppSkuTier."
   type = string
-  default = "S2"
+  default = "S1"
 }
 
 variable "functionsAppSkuTier" {
@@ -496,7 +496,7 @@ variable "searchIndexName" {
 
 variable "chatWarningBannerText" {
   type    = string
-  default = ""
+  default = "Hello"
 }
 
 variable "chunkTargetSize" {
