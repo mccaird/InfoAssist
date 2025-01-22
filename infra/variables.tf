@@ -413,7 +413,7 @@ variable "enrichmentAppServicePlanName" {
 variable "enrichmentAppServiceSkuSize" {
   description = "The size of the app service plan for the enrichment service. Must match with the tier value in enrichmentAppServiceSkuTier."
   type = string
-  default = "P0v3"
+  default = "P2v3"
 }
 
 variable "enrichmentAppServiceSkuTier" {
@@ -450,7 +450,7 @@ variable "functionsAppName" {
 variable "functionsAppSkuSize" {
   description = "The size of the app service plan for the functions app. Must match with the tier value in functionsAppSkuTier."
   type = string
-  default = "S1"
+  default = "S2"
 }
 
 variable "functionsAppSkuTier" {
