@@ -72,15 +72,15 @@ resource "azurerm_role_assignment" "acr_pull_role" {
   scope                = var.container_registry_id
 }
 
-data "azurerm_key_vault" "existing" {
-  name                = var.keyVaultName
-  resource_group_name = var.resourceGroupName
-}
+# data "azurerm_key_vault" "existing" {
+#   name                = var.keyVaultName
+#   resource_group_name = var.resourceGroupName
+# }
 
-data "azurerm_storage_account" "existing_sa" {
-  name                = var.blobStorageAccountName
-  resource_group_name = var.resourceGroupName
-}
+# data "azurerm_storage_account" "existing_sa" {
+#   name                = var.blobStorageAccountName
+#   resource_group_name = var.resourceGroupName
+# }
 
 // Create function app resource
 resource "azurerm_linux_function_app" "function_app" {
