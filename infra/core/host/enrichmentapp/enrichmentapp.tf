@@ -246,10 +246,10 @@ resource "azurerm_private_endpoint" "privateEnrichmentEndpoint" {
   }
 }
 
-# data "azurerm_key_vault" "existing" {
-#   name                = var.keyVaultName
-#   resource_group_name = var.resourceGroupName
-# }
+data "azurerm_key_vault" "existing" {
+  name                = var.keyVaultName
+  resource_group_name = var.resourceGroupName
+}
 
 resource "azurerm_key_vault_access_policy" "policy" {
   key_vault_id = data.azurerm_key_vault.existing.id
