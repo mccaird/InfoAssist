@@ -10,7 +10,7 @@ from sentence_transformers import SentenceTransformer
 
 def load_models():
     model_names = os.getenv(
-        "TARGET_EMBEDDINGS_MODEL", "all-mpnet-base-v2|paraphrase-multilingual-MiniLM-L12-v2|BAAI/bge-small-en-v1.5"
+        "TARGET_EMBEDDINGS_MODEL", "all-mpnet-base-v2|paraphrase-multilingual-MiniLM-L12-v2|BAAI/bge-small-en-v1.5|thenlper/gte-small"
     )
     print("Downloading models: ", model_names)
 
